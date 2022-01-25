@@ -3,7 +3,7 @@ import { recipe } from "@vanilla-extract/recipes";
 
 const BRAND_COLOR = "#f06d06";
 
-export const buttonStyle = style({
+const buttonStyle = style({
 	backgroundColor: BRAND_COLOR,
 	color: "white",
 	padding: 10,
@@ -22,6 +22,7 @@ export const buttonRecipe = recipe({
 
 	variants: {
 		type: {
+			default: {},
 			primary: {
 				background: "none",
 				color: BRAND_COLOR,
