@@ -1,6 +1,5 @@
 import { ButtonHTMLAttributes } from "react";
 import { buttonRecipe } from "./button.css";
-import { recipe } from "@vanilla-extract/recipes";
 
 interface Props extends Pick<ButtonHTMLAttributes<HTMLButtonElement>, "type"> {
 	recipe?: "default";
