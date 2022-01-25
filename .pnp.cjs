@@ -40,6 +40,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@vanilla-extract/babel-plugin", "npm:1.1.4"],
             ["@vanilla-extract/css", "npm:1.6.8"],
             ["@vanilla-extract/next-plugin", "virtual:873f0a9d468c3f438cf1a0bc80d93db96a74f3d52bb58c6dd85c200ed9744cd87b5defdddccd91927459fa914f5161c22f1784c1043684b554b66717304aee49#npm:2.0.1"],
+            ["@vanilla-extract/recipes", "virtual:873f0a9d468c3f438cf1a0bc80d93db96a74f3d52bb58c6dd85c200ed9744cd87b5defdddccd91927459fa914f5161c22f1784c1043684b554b66717304aee49#npm:0.2.3"],
             ["eslint", "npm:8.7.0"],
             ["eslint-config-next", "virtual:873f0a9d468c3f438cf1a0bc80d93db96a74f3d52bb58c6dd85c200ed9744cd87b5defdddccd91927459fa914f5161c22f1784c1043684b554b66717304aee49#npm:12.0.8"],
             ["next", "virtual:873f0a9d468c3f438cf1a0bc80d93db96a74f3d52bb58c6dd85c200ed9744cd87b5defdddccd91927459fa914f5161c22f1784c1043684b554b66717304aee49#npm:12.0.4"],
@@ -972,6 +973,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@vanilla-extract/recipes", [
+        ["npm:0.2.3", {
+          "packageLocation": "./.yarn/cache/@vanilla-extract-recipes-npm-0.2.3-c811c9ea3d-41ae6d981b.zip/node_modules/@vanilla-extract/recipes/",
+          "packageDependencies": [
+            ["@vanilla-extract/recipes", "npm:0.2.3"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:873f0a9d468c3f438cf1a0bc80d93db96a74f3d52bb58c6dd85c200ed9744cd87b5defdddccd91927459fa914f5161c22f1784c1043684b554b66717304aee49#npm:0.2.3", {
+          "packageLocation": "./.yarn/__virtual__/@vanilla-extract-recipes-virtual-a2838218f5/0/cache/@vanilla-extract-recipes-npm-0.2.3-c811c9ea3d-41ae6d981b.zip/node_modules/@vanilla-extract/recipes/",
+          "packageDependencies": [
+            ["@vanilla-extract/recipes", "virtual:873f0a9d468c3f438cf1a0bc80d93db96a74f3d52bb58c6dd85c200ed9744cd87b5defdddccd91927459fa914f5161c22f1784c1043684b554b66717304aee49#npm:0.2.3"],
+            ["@types/vanilla-extract__css", null],
+            ["@vanilla-extract/css", "npm:1.6.8"]
+          ],
+          "packagePeers": [
+            "@types/vanilla-extract__css",
+            "@vanilla-extract/css"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@vanilla-extract/webpack-plugin", [
         ["npm:2.1.5", {
           "packageLocation": "./.yarn/cache/@vanilla-extract-webpack-plugin-npm-2.1.5-b2df9cfced-842c66b91e.zip/node_modules/@vanilla-extract/webpack-plugin/",
@@ -1819,6 +1842,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@vanilla-extract/babel-plugin", "npm:1.1.4"],
             ["@vanilla-extract/css", "npm:1.6.8"],
             ["@vanilla-extract/next-plugin", "virtual:873f0a9d468c3f438cf1a0bc80d93db96a74f3d52bb58c6dd85c200ed9744cd87b5defdddccd91927459fa914f5161c22f1784c1043684b554b66717304aee49#npm:2.0.1"],
+            ["@vanilla-extract/recipes", "virtual:873f0a9d468c3f438cf1a0bc80d93db96a74f3d52bb58c6dd85c200ed9744cd87b5defdddccd91927459fa914f5161c22f1784c1043684b554b66717304aee49#npm:0.2.3"],
             ["eslint", "npm:8.7.0"],
             ["eslint-config-next", "virtual:873f0a9d468c3f438cf1a0bc80d93db96a74f3d52bb58c6dd85c200ed9744cd87b5defdddccd91927459fa914f5161c22f1784c1043684b554b66717304aee49#npm:12.0.8"],
             ["next", "virtual:873f0a9d468c3f438cf1a0bc80d93db96a74f3d52bb58c6dd85c200ed9744cd87b5defdddccd91927459fa914f5161c22f1784c1043684b554b66717304aee49#npm:12.0.4"],
