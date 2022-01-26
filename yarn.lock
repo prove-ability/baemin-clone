@@ -794,6 +794,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"baemin-clone@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "baemin-clone@workspace:."
+  dependencies:
+    "@types/node": 17.0.10
+    "@types/react": 17.0.38
+    "@vanilla-extract/babel-plugin": ^1.1.4
+    "@vanilla-extract/css": ^1.6.8
+    "@vanilla-extract/next-plugin": ^2.0.1
+    "@vanilla-extract/recipes": ^0.2.3
+    eslint: 8.7.0
+    eslint-config-next: 12.0.8
+    next: 12.0.8
+    next-vanilla-extract: ^1.0.0
+    react: 17.0.2
+    react-dom: 17.0.2
+    typescript: ^4.5.5
+  languageName: unknown
+  linkType: soft
+
 "balanced-match@npm:^1.0.0":
   version: 1.0.2
   resolution: "balanced-match@npm:1.0.2"
@@ -957,26 +977,6 @@ __metadata:
   checksum: a8ec44390849bcf0502f20e6349fa087944bb88ac83d796d7fd5ace837d242308aae54b247a6a56bec463e5ab9be08dfad48d389673c34e8e31cc0a661a17a95
   languageName: node
   linkType: hard
-
-"crm-cloude@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "crm-cloude@workspace:."
-  dependencies:
-    "@types/node": 17.0.10
-    "@types/react": 17.0.38
-    "@vanilla-extract/babel-plugin": ^1.1.4
-    "@vanilla-extract/css": ^1.6.8
-    "@vanilla-extract/next-plugin": ^2.0.1
-    "@vanilla-extract/recipes": ^0.2.3
-    eslint: 8.7.0
-    eslint-config-next: 12.0.8
-    next: 12.0.8
-    next-vanilla-extract: ^1.0.0
-    react: 17.0.2
-    react-dom: 17.0.2
-    typescript: ^4.5.5
-  languageName: unknown
-  linkType: soft
 
 "cross-spawn@npm:^7.0.2":
   version: 7.0.3
