@@ -1,13 +1,12 @@
 import { style } from "@vanilla-extract/css";
 import { recipe } from "@vanilla-extract/recipes";
-// import { colors } from "styles/themes.css";
+import { colors } from "styles/themes.css";
 
 const BRAND_COLOR = "#f06d06";
 
 const buttonStyle = style({
 	backgroundColor: BRAND_COLOR,
-	// color: "white",
-	// color: colors.text.dimmed,
+	color: colors.text.normal,
 	padding: 10,
 	border: `2px solid ${BRAND_COLOR}`,
 	margin: 10,
