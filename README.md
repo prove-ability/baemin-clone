@@ -11,9 +11,16 @@
 #### 22.01.25
 
 -   vailla-extract theme 에 활용하는 colos(vars) 설정 후 다른 css.ts 파일에서 불러와서 사용시 이슈
--   nextjs hmr 기능에 이슈가 있는 듯
+-   nextjs dev server 기능 정상 작동하지 않음
 
 ```shell
     error - ./.yarn/__virtual__/next-virtual-71f8efa10f/0/cache/next-npm-12.0.8-aa55acca00-947f0295aa.zip/node_modules/next/dist/client/dev/dev-build-watcher.js
 Error: Failed to read source code from /Volumes/workspace/crm-cloude/.yarn/__virtual__/next-virtual-71f8efa10f/0/cache/next-npm-12.0.8-aa55acca00-947f0295aa.zip/node_modules/next/dist/client/dev/dev-build-watcher.js
 ```
+
+#### 22.01.26
+
+-   reset css 추가
+-   25일에 있던 이슈는 yarn 1.@.@ 을 사용하니 이슈가 사라짐
+-   yarn 버전 변경을 말고 다른 방법을 찾다가 components/button/button.css.ts -> styles/components/button.css.ts 로 하면 정상 작동함 / 아래 context 의 범위가 프로젝트가 아닌 theme 를 정의한 폴더 기준인가..?
+    > Ensure this function is called within a .css.ts context, otherwise variable names will be mismatched between files.
