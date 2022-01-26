@@ -1,7 +1,7 @@
-import "../styles/globals.css";
-import type { AppProps } from "next/app";
-import Layout from "../components/layout";
+import "styles/reset.css";
 import { useEffect } from "react";
+import type { AppProps } from "next/app";
+import Layout from "components/layout";
 import { darkTheme, lightTheme } from "styles/themes.css";
 
 function cleanThemes() {
