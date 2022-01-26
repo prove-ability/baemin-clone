@@ -1,5 +1,5 @@
 {
-	"name": "crm-cloude",
+	"name": "baemin-clone",
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
