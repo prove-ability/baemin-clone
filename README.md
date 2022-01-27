@@ -24,3 +24,8 @@ Error: Failed to read source code from /Volumes/workspace/crm-cloude/.yarn/__vir
 -   25일에 있던 이슈는 yarn 1.@.@ 을 사용하니 이슈가 사라짐
 -   yarn 버전 변경을 말고 다른 방법을 찾다가 components/button/button.css.ts -> styles/components/button.css.ts 로 하면 정상 작동함 / 아래 context 의 범위가 프로젝트가 아닌 theme 를 정의한 폴더 기준인가..?
     > Ensure this function is called within a .css.ts context, otherwise variable names will be mismatched between files.
+
+#### 22.01.27
+
+-   layout 작업 시작
+-   theme 색상 추가
