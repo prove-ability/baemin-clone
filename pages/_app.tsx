@@ -32,7 +32,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<Layout>
 			<Component {...pageProps} />
-			<button onClick={switchTheme}>Switch theme</button>
+			{/* <button onClick={switchTheme}>Switch theme</button> */}
 		</Layout>
 	);
 }
