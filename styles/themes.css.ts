@@ -5,7 +5,7 @@ export const colors = createThemeContract({
 	secondary: null,
 	text: {
 		normal: null,
-		dimmed: null,
+		gray: null,
 	},
 	background: {
 		white: null,
@@ -19,7 +19,7 @@ export const lightTheme = createTheme(colors, {
 	secondary: "#DB2777",
 	text: {
 		normal: "#1F2937",
-		dimmed: "#6B7280",
+		gray: "#6B7280",
 	},
 	background: {
 		white: "#fff",
@@ -33,7 +33,7 @@ export const darkTheme = createTheme(colors, {
 	secondary: "#F472B6",
 	text: {
 		normal: "#F9FAFB",
-		dimmed: "#D1D5DB",
+		gray: "#D1D5DB",
 	},
 	background: {
 		white: "#fff",
