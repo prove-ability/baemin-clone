@@ -223,7 +223,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.16.3":
+"@babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.14.5, @babel/runtime@npm:^7.16.3":
   version: 7.16.7
   resolution: "@babel/runtime@npm:7.16.7"
   dependencies:
@@ -470,6 +470,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/lodash@npm:^4":
+  version: 4.14.178
+  resolution: "@types/lodash@npm:4.14.178"
+  checksum: a69a04a60bfc5257c3130a554b4efa0c383f0141b7b3db8ab7cf07ad2a46ea085fce66d0242da41da7e5647b133d5dfb2c15add9cbed8d7fef955e4a1e5b3128
+  languageName: node
+  linkType: hard
+
 "@types/node@npm:*":
   version: 17.0.12
   resolution: "@types/node@npm:17.0.12"
@@ -481,6 +488,15 @@ __metadata:
   version: 17.0.10
   resolution: "@types/node@npm:17.0.10"
   checksum: 979e83d642a2b4f18fa1a4233f884822c05abc7acd0836024aa964187f8446432b21f7913e72fe2b3927c4a811c27a0b6cd60ac7c4ac6a6762cfbab70782aa6a
+  languageName: node
+  linkType: hard
+
+"@types/nuka-carousel@npm:^4.4.6":
+  version: 4.4.6
+  resolution: "@types/nuka-carousel@npm:4.4.6"
+  dependencies:
+    nuka-carousel: "*"
+  checksum: 4f018b88f8a25f0acf632a2594504774f0058134fe10d07b4f53e1597dd17743f9da6a4abcfcca33ad3d70dfea2140257d50bf685776789631e9a17c6fc1006d
   languageName: node
   linkType: hard
 
@@ -798,7 +814,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "baemin-clone@workspace:."
   dependencies:
+    "@types/lodash": ^4
     "@types/node": 17.0.10
+    "@types/nuka-carousel": ^4.4.6
     "@types/react": 17.0.38
     "@vanilla-extract/babel-plugin": ^1.1.4
     "@vanilla-extract/css": ^1.6.8
@@ -806,8 +824,10 @@ __metadata:
     "@vanilla-extract/recipes": ^0.2.3
     eslint: 8.7.0
     eslint-config-next: 12.0.8
+    lodash: ^4.17.21
     next: 12.0.8
     next-vanilla-extract: ^1.0.0
+    nuka-carousel: ^4.8.4
     react: 17.0.2
     react-dom: 17.0.2
     typescript: ^4.5.5
@@ -1005,10 +1025,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"csstype@npm:^2.6.6":
+  version: 2.6.19
+  resolution: "csstype@npm:2.6.19"
+  checksum: 72b51ddd30ba308d08373cd890e79526efdc19a9762941845040055f75353992f2d8d4cf4db282a8e1d3d9d2a39c989c65fe32b7b2655f08d313660c4048d2d6
+  languageName: node
+  linkType: hard
+
 "csstype@npm:^3.0.2, csstype@npm:^3.0.7":
   version: 3.0.10
   resolution: "csstype@npm:3.0.10"
   checksum: 20a8fa324f2b33ddf94aa7507d1b6ab3daa6f3cc308888dc50126585d7952f2471de69b2dbe0635d1fdc31223fef8e070842691877e725caf456e2378685a631
+  languageName: node
+  linkType: hard
+
+"d3-ease@npm:^1.0.3":
+  version: 1.0.7
+  resolution: "d3-ease@npm:1.0.7"
+  checksum: 117811d51dfc4a126e8d23d249252df792fbbe30a93615e1d67158c482eff69b900e45a4cc92746fe65b1143287455406a89aae04eb4ca1ba5b1dc2a42af5b85
+  languageName: node
+  linkType: hard
+
+"d3-timer@npm:^1.0.9":
+  version: 1.0.10
+  resolution: "d3-timer@npm:1.0.10"
+  checksum: f7040953672deb2dfa03830ace80dbbcb212f80890218eba15dcca6f33f74102d943023ccc2a563295195cd8c63639bb2410ef1691c8fecff4a114fdf5c666f4
   languageName: node
   linkType: hard
 
@@ -1470,6 +1511,13 @@ __metadata:
   dependencies:
     require-like: ">= 0.1.1"
   checksum: 0e9246bb16256eef07afa7f31408310a784407d2fec2ddd2d7fe1f885a45b7cf37e30739e658a65d000c3dcff8d5b5c96f9819188b00e1f667b6638e75eaf23c
+  languageName: node
+  linkType: hard
+
+"exenv@npm:^1.2.0":
+  version: 1.2.2
+  resolution: "exenv@npm:1.2.2"
+  checksum: a894f3b60ab8419e0b6eec99c690a009c8276b4c90655ccaf7d28faba2de3a6b93b3d92210f9dc5efd36058d44f04098f6bbccef99859151104bfd49939904dc
   languageName: node
   linkType: hard
 
@@ -2025,6 +2073,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"kapellmeister@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "kapellmeister@npm:3.0.1"
+  dependencies:
+    d3-timer: ^1.0.9
+  checksum: 297e9838537f039a47d8dab3dc77f58fa076ca522159c4c6d14c4c42fb2e881b1887455473437b1b0e7e0aa24f5611f4ffbce69e0e27dc5ee41c3aa42c00ff54
+  languageName: node
+  linkType: hard
+
 "language-subtag-registry@npm:~0.3.2":
   version: 0.3.21
   resolution: "language-subtag-registry@npm:0.3.21"
@@ -2294,6 +2351,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"nuka-carousel@npm:*, nuka-carousel@npm:^4.8.4":
+  version: 4.8.4
+  resolution: "nuka-carousel@npm:4.8.4"
+  dependencies:
+    csstype: ^2.6.6
+    d3-ease: ^1.0.3
+    exenv: ^1.2.0
+    prop-types: ^15.6.0
+    react-move: ^6.5.0
+    wicg-inert: ^3.1.0
+  peerDependencies:
+    react: ^0.14.9 || ^15.3.0 || ^16.0.0 || ^17.0.1
+    react-dom: ^0.14.9 || ^15.3.0 || ^16.0.0 || ^17.0.1
+  checksum: 26ba23877b20451b2f1795a75c8734f552dea61af15cf22ffafd0becd47f95a7048d29db18ca741767c5824dd29ea69cf6c71d9864d81de8c207bb1c3f0f6720
+  languageName: node
+  linkType: hard
+
 "object-assign@npm:^4.1.1":
   version: 4.1.1
   resolution: "object-assign@npm:4.1.1"
@@ -2526,7 +2600,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.7.2":
+"prop-types@npm:^15.6.0, prop-types@npm:^15.7.2":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -2575,6 +2649,19 @@ __metadata:
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: f7a19ac3496de32ca9ae12aa030f00f14a3d45374f1ceca0af707c831b2a6098ef0d6bdae51bd437b0a306d7f01d4677fcc8de7c0d331eb47ad0f46130e53c5f
+  languageName: node
+  linkType: hard
+
+"react-move@npm:^6.5.0":
+  version: 6.5.0
+  resolution: "react-move@npm:6.5.0"
+  dependencies:
+    "@babel/runtime": ^7.14.5
+    kapellmeister: ^3.0.1
+    prop-types: ^15.7.2
+  peerDependencies:
+    react: ">=16.3.0"
+  checksum: fa6a97466eb7ef7c3c5a1aae596b177c3505ed45464e36d6bc1de73bfdae1b636457f021872e6e6079e371f6ba998cc16f80943b129fedfcd5165c04b4d96622
   languageName: node
   linkType: hard
 
@@ -3137,6 +3224,13 @@ __metadata:
   bin:
     node-which: ./bin/node-which
   checksum: 1a5c563d3c1b52d5f893c8b61afe11abc3bab4afac492e8da5bde69d550de701cf9806235f20a47b5c8fa8a1d6a9135841de2596535e998027a54589000e66d1
+  languageName: node
+  linkType: hard
+
+"wicg-inert@npm:^3.1.0":
+  version: 3.1.1
+  resolution: "wicg-inert@npm:3.1.1"
+  checksum: d4553ea762ad5808b2d20990f05695d3272cf5d24ee9b0008d0edb0c69466eb6a24824ed932070553a2dc8b25eee8fcde780e073de89d640882d9da99f874944
   languageName: node
   linkType: hard
 
