@@ -1,10 +1,10 @@
 import { style } from "@vanilla-extract/css";
 import { recipe } from "@vanilla-extract/recipes";
-import { colors } from "styles/themes.css";
+import { vars } from "styles/themes.css";
 
 // footer
 const footerStyle = style({
-	backgroundColor: colors.background.gray,
+	backgroundColor: vars.background.gray,
 	padding: "20px 10px",
 	marginTop: "auto",
 });
@@ -21,11 +21,26 @@ export const footerRecipe = recipe({
 
 // 약관 terms
 const termsStyle = style({
-	color: colors.text.gray,
+	color: vars.text.gray,
 });
 
 export const termsRecipe = recipe({
 	base: [termsStyle],
+	variants: {
+		type: {
+			default: {},
+			primary: {},
+		},
+	},
+});
+
+// ul
+const ulStyle = style({
+	display: "flex",
+});
+
+export const ulRecipe = recipe({
+	base: [ulStyle],
 	variants: {
 		type: {
 			default: {},

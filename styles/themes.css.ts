@@ -1,6 +1,6 @@
 import { createThemeContract, createTheme } from "@vanilla-extract/css";
 
-export const colors = createThemeContract({
+export const vars = createThemeContract({
 	primary: null,
 	secondary: null,
 	text: {
@@ -14,7 +14,7 @@ export const colors = createThemeContract({
 	},
 });
 
-export const lightTheme = createTheme(colors, {
+export const lightTheme = createTheme(vars, {
 	primary: "#1E40AF",
 	secondary: "#DB2777",
 	text: {
@@ -28,7 +28,7 @@ export const lightTheme = createTheme(colors, {
 	},
 });
 
-export const darkTheme = createTheme(colors, {
+export const darkTheme = createTheme(vars, {
 	primary: "#60A5FA",
 	secondary: "#F472B6",
 	text: {
