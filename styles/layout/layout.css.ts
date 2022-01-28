@@ -5,6 +5,7 @@ import { colors } from "styles/themes.css";
 // layout
 const layoutStyle = style({
 	width: "100%",
+	height: "100%",
 	backgroundColor: colors.background.main,
 });
 
@@ -19,9 +20,12 @@ export const layoutRecipe = recipe({
 
 // wrapper
 const wrapperStyle = style({
+	display: "flex",
+	flexDirection: "column",
 	width: "100%",
-	margin: "0 auto",
 	maxWidth: "769px",
+	height: "100vh",
+	margin: "0 auto",
 	backgroundColor: colors.background.white,
 });
 
