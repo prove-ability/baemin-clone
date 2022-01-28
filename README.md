@@ -34,4 +34,9 @@ Error: Failed to read source code from /Volumes/workspace/crm-cloude/.yarn/__vir
 
 -   nuka-carousel 이슈 - SSR 문제로 client 와 서버간의 tabIndex 불일치 문제로 올해 v5 가 나오면서 수정 될 거 같다고 함 / 기다려봐야지..
     [stackoverflow](https://github.com/FormidableLabs/nuka-carousel/issues/735)
--
+-   vanilla-extract 아래 링크 맞춰서 수정..?
+-   테마를 유틸 폴더로 변경 및 각각 css 파일을 컴포넌트 옆으로 변경해보자
+-   https://codesandbox.io/s/08gyg?file=/src/global.css.ts
+
+해당 문서 참고
+https://vanilla-extract.style/documentation/recipes-api/#recipevariants
