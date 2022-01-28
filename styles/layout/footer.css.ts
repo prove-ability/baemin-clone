@@ -1,10 +1,10 @@
 import { style } from "@vanilla-extract/css";
 import { recipe } from "@vanilla-extract/recipes";
-import { vars } from "styles/themes.css";
+import { colors } from "styles/themes.css";
 
 // footer
 const footerStyle = style({
-	backgroundColor: vars.background.gray,
+	backgroundColor: colors.background.gray,
 	padding: "20px 10px",
 	marginTop: "auto",
 });
@@ -12,39 +12,38 @@ const footerStyle = style({
 export const footerRecipe = recipe({
 	base: [footerStyle],
 	variants: {
-		type: {
-			default: {},
-			primary: {},
-		},
+		// 색상 또는 사이즈
 	},
 });
 
 // 약관 terms
 const termsStyle = style({
-	color: vars.text.gray,
+	color: colors.text.gray,
 });
 
 export const termsRecipe = recipe({
 	base: [termsStyle],
 	variants: {
-		type: {
-			default: {},
-			primary: {},
-		},
+		// 색상 또는 사이즈
 	},
 });
+
+const liStyle = style({});
 
 // ul
 const ulStyle = style({
 	display: "flex",
+	selectors: {
+		"& li": {},
+		// `& ${liStyle}`: {
+		// 	color: "red",
+		// },
+	},
 });
 
 export const ulRecipe = recipe({
 	base: [ulStyle],
 	variants: {
-		type: {
-			default: {},
-			primary: {},
-		},
+		// 색상 또는 사이즈
 	},
 });

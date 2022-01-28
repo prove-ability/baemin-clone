@@ -1,21 +1,17 @@
 import { style } from "@vanilla-extract/css";
 import { recipe } from "@vanilla-extract/recipes";
-import { vars } from "styles/themes.css";
+import { colors } from "styles/themes.css";
 
 // layout
 const layoutStyle = style({
 	width: "100%",
 	height: "100%",
-	backgroundColor: vars.background.main,
+	backgroundColor: colors.background.main,
 });
 
 export const layoutRecipe = recipe({
 	base: [layoutStyle],
-	variants: {
-		type: {
-			default: {},
-		},
-	},
+	variants: {},
 });
 
 // wrapper
@@ -26,16 +22,11 @@ const wrapperStyle = style({
 	maxWidth: "769px",
 	height: "100vh",
 	margin: "0 auto",
-	backgroundColor: vars.background.white,
+	backgroundColor: colors.background.white,
 });
 
 export const wrapperRecipe = recipe({
 	base: [wrapperStyle],
 
-	variants: {
-		type: {
-			default: {},
-			primary: {},
-		},
-	},
+	variants: {},
 });
