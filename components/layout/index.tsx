@@ -1,4 +1,4 @@
-import { layoutRecipe, wrapperRecipe } from "styles/components/layout/layout.css";
+import { layoutRecipe, wrapperRecipe } from "styles/layout/layout.css";
 import Footer from "./footer";
 import Header from "./header";
 // import Nav from "./nav";
