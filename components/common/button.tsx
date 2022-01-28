@@ -7,7 +7,7 @@ interface Props extends Pick<ButtonHTMLAttributes<HTMLButtonElement>, "type"> {
 
 const Button: React.FC<Props> = ({ children, type = "button", recipe = "default" }) => {
 	return (
-		<button className={buttonRecipe({ type: recipe })} type={type}>
+		<button className={buttonRecipe()} type={type}>
 			{children}
 		</button>
 	);
