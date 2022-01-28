@@ -29,3 +29,9 @@ Error: Failed to read source code from /Volumes/workspace/crm-cloude/.yarn/__vir
 
 -   layout 작업 시작
 -   theme 색상 추가
+
+#### 22.01.28
+
+-   nuka-carousel 이슈 - SSR 문제로 client 와 서버간의 tabIndex 불일치 문제로 올해 v5 가 나오면서 수정 될 거 같다고 함 / 기다려봐야지..
+    [stackoverflow](https://github.com/FormidableLabs/nuka-carousel/issues/735)
+-
