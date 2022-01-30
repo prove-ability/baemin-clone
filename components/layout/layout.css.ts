@@ -1,12 +1,12 @@
 import { style } from "@vanilla-extract/css";
 import { recipe } from "@vanilla-extract/recipes";
-import { colors } from "styles/themes.css";
+import { STYLES } from "components/constants/constants.css";
 
 // layout
 const layoutStyle = style({
 	width: "100%",
 	height: "100%",
-	backgroundColor: colors.background.main,
+	backgroundColor: STYLES.background.main,
 });
 
 export const layoutRecipe = recipe({
@@ -22,7 +22,7 @@ const wrapperStyle = style({
 	maxWidth: "769px",
 	height: "100vh",
 	margin: "0 auto",
-	backgroundColor: colors.background.white,
+	backgroundColor: STYLES.background.white,
 });
 
 export const wrapperRecipe = recipe({

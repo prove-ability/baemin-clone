@@ -1,12 +1,12 @@
 import { style } from "@vanilla-extract/css";
 import { recipe } from "@vanilla-extract/recipes";
-import { colors } from "styles/themes.css";
+import { STYLES } from "components/constants/constants.css";
 
 // wrapper
 const headerStyle = style({
 	display: "flex",
 	justifyContent: "space-between",
-	backgroundColor: colors.background.main,
+	backgroundColor: STYLES.background.main,
 });
 
 export const headerRecipe = recipe({

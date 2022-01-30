@@ -1,9 +1,9 @@
 import { style } from "@vanilla-extract/css";
 import { recipe } from "@vanilla-extract/recipes";
-import { colors } from "styles/themes.css";
+import { STYLES } from "components/constants/constants.css";
 
 const typographyStyle = style({
-	color: colors.text.normal,
+	color: STYLES.text.normal,
 	":hover": {},
 	selectors: {},
 });

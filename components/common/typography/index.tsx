@@ -1,4 +1,4 @@
-import { typographyRecipe, TypographyVariants } from "styles/components/typography.css";
+import { typographyRecipe, TypographyVariants } from "components/common/typography/typography.css";
 
 interface Props extends TypographyVariants {
 	text: string;

@@ -1,7 +1,7 @@
 import Slider, { Item } from "components/common/slider";
 import Typography from "components/common/typography";
-import { footerRecipe, liRecipe, ulRecipe } from "styles/layout/footer.css";
-import { termsRecipe } from "../../styles/layout/footer.css";
+import { footerRecipe, liRecipe, ulRecipe } from "components/layout/footer/footer.css";
+import { termsRecipe } from "./footer.css";
 
 function Footer() {
 	const items: Item[] = [

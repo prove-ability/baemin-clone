@@ -1,10 +1,10 @@
 import { style } from "@vanilla-extract/css";
 import { recipe } from "@vanilla-extract/recipes";
-import { colors } from "styles/themes.css";
+import { STYLES } from "components/constants/constants.css";
 
 // footer
 const footerStyle = style({
-	backgroundColor: colors.background.gray,
+	backgroundColor: STYLES.background.gray,
 	padding: "20px 10px",
 	marginTop: "auto",
 });
@@ -18,7 +18,7 @@ export const footerRecipe = recipe({
 
 // 약관 terms
 const termsStyle = style({
-	color: colors.text.gray,
+	color: STYLES.text.gray,
 });
 
 export const termsRecipe = recipe({

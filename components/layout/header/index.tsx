@@ -1,4 +1,4 @@
-import { headerRecipe } from "styles/layout/header.css";
+import { headerRecipe } from "components/layout/header/header.css";
 
 function Header() {
 	return (

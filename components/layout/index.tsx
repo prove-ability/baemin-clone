@@ -1,6 +1,6 @@
-import { layoutRecipe, wrapperRecipe } from "styles/layout/layout.css";
 import Footer from "./footer";
 import Header from "./header";
+import { layoutRecipe, wrapperRecipe } from "components/layout/layout.css";
 // import Nav from "./nav";
 
 const Layout: React.FC = ({ children }) => {
