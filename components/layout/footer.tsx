@@ -1,6 +1,6 @@
 import Slider, { Item } from "components/common/slider";
 import Typography from "components/common/typography";
-import { footerRecipe, ulRecipe } from "styles/layout/footer.css";
+import { footerRecipe, liRecipe, ulRecipe } from "styles/layout/footer.css";
 import { termsRecipe } from "../../styles/layout/footer.css";
 
 function Footer() {
@@ -30,16 +30,16 @@ function Footer() {
 			{/* 약관들 */}
 			<div className={termsRecipe()}>
 				<ul className={ulRecipe()}>
-					<li>
+					<li className={liRecipe()}>
 						<Typography text="사업자정보확인" />
 					</li>
-					<li>
+					<li className={liRecipe()}>
 						<Typography text="이용약관" />
 					</li>
-					<li>
+					<li className={liRecipe()}>
 						<Typography text="전자금용거래이용약관" />
 					</li>
-					<li>
+					<li className={liRecipe()}>
 						<Typography text="개인정보처리방침" />
 					</li>
 				</ul>

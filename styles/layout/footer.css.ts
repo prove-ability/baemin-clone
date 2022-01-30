@@ -28,21 +28,30 @@ export const termsRecipe = recipe({
 	},
 });
 
-const liStyle = style({});
-
 // ul
 const ulStyle = style({
 	display: "flex",
-	selectors: {
-		"& li": {},
-		// `& ${liStyle}`: {
-		// 	color: "red",
-		// },
-	},
+	margin: "10px 0",
 });
 
 export const ulRecipe = recipe({
 	base: [ulStyle],
+	variants: {
+		// 색상 또는 사이즈
+	},
+});
+
+// li
+const liStyle = style({
+	selectors: {
+		"&+&": {
+			marginLeft: "10px",
+		},
+	},
+});
+
+export const liRecipe = recipe({
+	base: [liStyle],
 	variants: {
 		// 색상 또는 사이즈
 	},
