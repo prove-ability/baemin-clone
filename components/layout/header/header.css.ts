@@ -7,10 +7,10 @@ const headerStyle = style({
 	display: "flex",
 	justifyContent: "space-between",
 	backgroundColor: STYLES.background.main,
+	padding: "20px",
 });
 
 export const headerRecipe = recipe({
 	base: [headerStyle],
-
 	variants: {},
 });
