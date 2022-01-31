@@ -6,6 +6,7 @@ import { STYLES } from "components/constants/constants.css";
 const layoutStyle = style({
 	width: "100%",
 	height: "100%",
+	marginBottom: "20px",
 	backgroundColor: STYLES.background.main,
 });
 
