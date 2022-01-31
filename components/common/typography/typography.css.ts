@@ -16,6 +16,13 @@ export const typographyRecipe = recipe({
 			"13px": { fontSize: "13px" },
 			"14px": { fontSize: "14px" },
 		},
+		isHover: {
+			true: {
+				":hover": {
+					cursor: "pointer",
+				},
+			},
+		},
 	},
 });
 
