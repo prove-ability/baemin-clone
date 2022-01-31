@@ -24,6 +24,12 @@ function Home() {
 			{/* 케러셀 */}
 			<div>
 				<Slider items={items} />
+				<Slider items={items} />
+				<Slider items={items} />
+				<Slider items={items} />
+				<Slider items={items} />
+				<Slider items={items} />
+				<Slider items={items} />
 			</div>
 		</div>
 	);
