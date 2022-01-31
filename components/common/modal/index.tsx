@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { modalBodyRecipe, modalHeaderRecipe, modalOverlayRecipe, modalRecipe } from "./modal.css";
 
 interface Props {

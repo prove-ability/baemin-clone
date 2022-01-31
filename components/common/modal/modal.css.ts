@@ -45,12 +45,10 @@ const modalOverlayStyle = style({
 	top: "0",
 	left: "0",
 	width: "100%",
-	height: "100%",
 	display: "flex",
 	justifyContent: "center",
 	alignItems: "center",
 	backgroundColor: "rgba(0, 0, 0, 0.3)",
-	transform: "translateY(110%)",
 	transition: "transform 1s ease",
 });
 
@@ -60,9 +58,12 @@ export const modalOverlayRecipe = recipe({
 		show: {
 			true: {
 				transform: "translateY(0)",
+				visibility: "visible",
+				height: "100%",
 			},
 			false: {
 				transform: "translateY(110%)",
+				visibility: "hidden",
 			},
 		},
 	},
