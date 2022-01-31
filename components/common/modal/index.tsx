@@ -8,17 +8,12 @@ interface Props {
 }
 
 const Modal: React.FC<Props> = ({ show, onClose, children, title }) => {
-	const [isBrowser, setIsBrowser] = useState(false);
-	useEffect(() => {
-		setIsBrowser(true);
-	}, []);
-
 	const handleCloseClick = (e: React.MouseEvent<HTMLSpanElement>) => {
 		e.preventDefault();
 		onClose();
 	};
 
-	const modalContent = (
+	return (
 		<div className={modalOverlayRecipe({ show })}>
 			<div className={modalRecipe()}>
 				<div className={modalHeaderRecipe()}>
@@ -29,10 +24,6 @@ const Modal: React.FC<Props> = ({ show, onClose, children, title }) => {
 			</div>
 		</div>
 	);
-
-	if (!isBrowser) return null;
-
-	return modalContent;
 };
 
 export default Modal;
