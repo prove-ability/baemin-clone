@@ -6,24 +6,6 @@ import { termsRecipe } from "./footer.css";
 import { useState } from "react";
 
 function Footer() {
-	const items: Item[] = [
-		{ caption: "baemin1", path: "http://img.woowahan.com/www/common/baemin.jpg" },
-		{
-			caption: "baemin2",
-			path: "https://cdn.dailyimpact.co.kr/news/photo/201901/50618_9997_5649.jpg",
-		},
-		{
-			caption: "baemin3",
-			path: "https://miro.medium.com/max/992/1*DVM8hgRJalsAeayE3CEvAg.png",
-		},
-		{ caption: "baemin4", path: "https://t1.daumcdn.net/cfile/tistory/99B879455EA790590D" },
-		{ caption: "baemin5", path: "https://t1.daumcdn.net/cfile/tistory/99E208435FB6322304" },
-		{
-			caption: "baemin6",
-			path: "http://t1.daumcdn.net/brunch/service/user/4OZm/image/_3p_nMCKQt1KBQcvc7bFYr3jcYc",
-		},
-	];
-
 	// 사업자정보확인
 	const [checkBusinessInfoShowModal, setCheckBusinessInfoShowModal] = useState(false);
 	const onOpenCheckBusinessInfoShowModal = () => setCheckBusinessInfoShowModal(true);
@@ -44,10 +26,6 @@ function Footer() {
 	return (
 		<>
 			<footer className={footerRecipe()}>
-				{/* 케러셀 */}
-				<div>
-					<Slider items={items} />
-				</div>
 				{/* 약관들 */}
 				<div className={termsRecipe()}>
 					<ul className={ulRecipe()}>
@@ -76,10 +54,15 @@ function Footer() {
 				</div>
 				{/* 회사 정보 */}
 				<div>
-					<p>(주)우아한형제들</p>
 					<p>
-						(주)우아한형제들은 통신판매중개자이며, 통신판매의 당사자가 아닙니다. 따라서
-						(주)우아한형제들은 상품, 거래정보 및 거래에 대하여 책임을 지지 않습니다.
+						쿠팡(주) | 대표이사 : 박대준 사업
+						<br />
+						사업자 등록번호 : 120-88-00767 | 통신판매업신고 : 2017-서울송파-0680 |
+						서울시 송파구 송파대로 570 쿠팡이츠 고객센터: <b>1670-9827</b>| 이메일 문의:
+						eatshelp@coupang.com | 쿠팡은 통신판매업자로서 통신판매의 당사자가 아니며,
+						판매자가 등록한 상품 정보, 상품의 품질 및 거래에 대해서 일체의 책임을 지지
+						않습니다.<b>이용약관 및 개인정보처리방침</b>|호스팅서비스제공자: 쿠팡(주) |
+						사업자정보확인 않습니다.
 					</p>
 				</div>
 			</footer>
