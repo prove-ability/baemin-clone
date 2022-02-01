@@ -1,50 +1,50 @@
-import Modal from "components/common/modal";
-import Slider, { Item } from "components/common/slider";
-import Typography from "components/common/typography";
-import { footerRecipe, liRecipe, ulRecipe } from "components/layout/footer/footer.css";
-import { termsRecipe } from "./footer.css";
-import { useState } from "react";
+import Modal from "components/common/modal"
+import Slider, { Item } from "components/common/slider"
+import Typography from "components/common/typography"
+
+import { useState } from "react"
+import { sprinkles } from "../../common/theme.css"
 
 function Footer() {
 	// 사업자정보확인
-	const [checkBusinessInfoShowModal, setCheckBusinessInfoShowModal] = useState(false);
-	const onOpenCheckBusinessInfoShowModal = () => setCheckBusinessInfoShowModal(true);
-	const onCloseCheckBusinessInfoShowModal = () => setCheckBusinessInfoShowModal(false);
+	const [checkBusinessInfoShowModal, setCheckBusinessInfoShowModal] = useState(false)
+	const onOpenCheckBusinessInfoShowModal = () => setCheckBusinessInfoShowModal(true)
+	const onCloseCheckBusinessInfoShowModal = () => setCheckBusinessInfoShowModal(false)
 	// 이용약관
-	const [termsOfUseShowModal, setTermsOfUseShowModal] = useState(false);
-	const onOpenTermsOfUseShowModal = () => setTermsOfUseShowModal(true);
-	const onCloseTermsOfUseShowModal = () => setTermsOfUseShowModal(false);
+	const [termsOfUseShowModal, setTermsOfUseShowModal] = useState(false)
+	const onOpenTermsOfUseShowModal = () => setTermsOfUseShowModal(true)
+	const onCloseTermsOfUseShowModal = () => setTermsOfUseShowModal(false)
 	// 전자긍용거래이용약관
-	const [termsOfTranscationShowModal, setTermsOfTranscationShowModal] = useState(false);
-	const onOpenTermsOfTranscationShowModal = () => setTermsOfTranscationShowModal(true);
-	const onClaseTermsOfTranscationShowModal = () => setTermsOfTranscationShowModal(false);
+	const [termsOfTranscationShowModal, setTermsOfTranscationShowModal] = useState(false)
+	const onOpenTermsOfTranscationShowModal = () => setTermsOfTranscationShowModal(true)
+	const onClaseTermsOfTranscationShowModal = () => setTermsOfTranscationShowModal(false)
 	// 개인정보처리방침
-	const [checkPrivacyPolicyShowModal, setCheckPrivacyPolicyShowModal] = useState(false);
-	const onOpenCheckPrivacyPolicyShowModal = () => setCheckPrivacyPolicyShowModal(true);
-	const onCloseCheckPrivacyPolicyShowModal = () => setCheckPrivacyPolicyShowModal(false);
+	const [checkPrivacyPolicyShowModal, setCheckPrivacyPolicyShowModal] = useState(false)
+	const onOpenCheckPrivacyPolicyShowModal = () => setCheckPrivacyPolicyShowModal(true)
+	const onCloseCheckPrivacyPolicyShowModal = () => setCheckPrivacyPolicyShowModal(false)
 
 	return (
 		<>
-			<footer className={footerRecipe()}>
+			<footer>
 				{/* 약관들 */}
-				<div className={termsRecipe()}>
-					<ul className={ulRecipe()}>
-						<li className={liRecipe()}>
+				<div>
+					<ul>
+						<li>
 							<Typography
 								text="사업자정보확인"
 								onClick={onOpenCheckBusinessInfoShowModal}
 							/>
 						</li>
-						<li className={liRecipe()}>
+						<li>
 							<Typography text="이용약관" onClick={onOpenTermsOfUseShowModal} />
 						</li>
-						<li className={liRecipe()}>
+						<li>
 							<Typography
 								text="전자금용거래이용약관"
 								onClick={onOpenTermsOfTranscationShowModal}
 							/>
 						</li>
-						<li className={liRecipe()}>
+						<li>
 							<Typography
 								text="개인정보처리방침"
 								onClick={onOpenCheckPrivacyPolicyShowModal}
@@ -98,7 +98,7 @@ function Footer() {
 				</Modal>
 			</>
 		</>
-	);
+	)
 }
 
-export default Footer;
+export default Footer

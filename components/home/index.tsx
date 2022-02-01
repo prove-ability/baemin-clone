@@ -1,5 +1,4 @@
 import Slider, { Item } from "components/common/slider";
-import { homeRecipe } from "components/home/home.css";
 
 function Home() {
 	const items: Item[] = [
@@ -20,14 +19,9 @@ function Home() {
 		},
 	];
 	return (
-		<div className={homeRecipe()}>
+		<div>
 			{/* 케러셀 */}
 			<div>
-				<Slider items={items} />
-				<Slider items={items} />
-				<Slider items={items} />
-				<Slider items={items} />
-				<Slider items={items} />
 				<Slider items={items} />
 				<Slider items={items} />
 			</div>

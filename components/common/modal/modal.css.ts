@@ -1,59 +1,26 @@
-import { style } from "@vanilla-extract/css";
-import { recipe } from "@vanilla-extract/recipes";
+import { style } from "@vanilla-extract/css"
+import { recipe } from "@vanilla-extract/recipes"
+import { sprinkles } from "components/common/theme.css"
 
-// modal
-const modalBodyStyle = style({
-	paddingTop: "10xp",
-});
+// container
+const containerStyle = style([
+	sprinkles({
+		zIndex: "9999",
+		display: "flex",
+		placeItems: "center",
+		background: "dimmed",
+	}),
+	{
+		position: "absolute",
+		top: "0",
+		left: "0",
+		width: "100%",
+		transition: "transform 10s ease",
+	},
+])
 
-export const modalBodyRecipe = recipe({
-	base: [modalBodyStyle],
-	variants: {},
-});
-
-// header
-const modalheaderStyle = style({
-	display: "flex",
-	justifyContent: "flex-end",
-	fontSize: "25px",
-});
-
-export const modalHeaderRecipe = recipe({
-	base: [modalheaderStyle],
-	variants: {},
-});
-
-//
-const modalStyle = style({
-	backgroundColor: "white",
-	width: "100%",
-	maxWidth: "739px",
-	height: "100%",
-	borderRadius: "15px",
-	padding: "15px",
-});
-
-export const modalRecipe = recipe({
-	base: [modalStyle],
-	variants: {},
-});
-
-// Overlay
-const modalOverlayStyle = style({
-	zIndex: "9999",
-	position: "absolute",
-	top: "0",
-	left: "0",
-	width: "100%",
-	display: "flex",
-	justifyContent: "center",
-	alignItems: "center",
-	backgroundColor: "rgba(0, 0, 0, 0.3)",
-	transition: "transform 1s ease",
-});
-
-export const modalOverlayRecipe = recipe({
-	base: [modalOverlayStyle],
+export const container = recipe({
+	base: containerStyle,
 	variants: {
 		show: {
 			true: {
@@ -67,4 +34,29 @@ export const modalOverlayRecipe = recipe({
 			},
 		},
 	},
-});
+	defaultVariants: { show: false },
+})
+
+// wrapper
+export const wrapper = style([
+	sprinkles({
+		background: "white",
+		paddingX: "medium",
+	}),
+	{
+		width: "100%",
+		maxWidth: "769px",
+		height: "100%",
+	},
+])
+
+// header
+export const header = style([
+	sprinkles({
+		display: "flex",
+		placeItems: "center",
+	}),
+])
+
+// body
+export const body = style([sprinkles({ paddingTop: "medium" })])

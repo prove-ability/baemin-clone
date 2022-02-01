@@ -1,8 +1,6 @@
-import { headerRecipe } from "components/layout/header/header.css";
-
 function Header() {
 	return (
-		<header className={headerRecipe()}>
+		<header>
 			{/* 서비스 전체보기 버튼 */}
 			<span />
 			{/* 주소 나열 및 클릭시 하단에 주소 설정 팝업 */}

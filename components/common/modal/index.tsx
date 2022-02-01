@@ -1,28 +1,29 @@
-import { modalBodyRecipe, modalHeaderRecipe, modalOverlayRecipe, modalRecipe } from "./modal.css";
+import * as styles from "components/common/modal/modal.css"
+import { sprinkles } from "../theme.css"
 
 interface Props {
-	show: boolean;
-	onClose: () => void;
-	title: string;
+	show: boolean
+	onClose: () => void
+	title: string
 }
 
 const Modal: React.FC<Props> = ({ show, onClose, children, title }) => {
 	const handleCloseClick = (e: React.MouseEvent<HTMLSpanElement>) => {
-		e.preventDefault();
-		onClose();
-	};
+		e.preventDefault()
+		onClose()
+	}
 
 	return (
-		<div className={modalOverlayRecipe({ show })}>
-			<div className={modalRecipe()}>
-				<div className={modalHeaderRecipe()}>
+		<div className={styles.container({ show })}>
+			<div className={styles.wrapper}>
+				<div className={styles.header}>
 					<span onClick={handleCloseClick}>x</span>
 				</div>
 				{title && <p>{title}</p>}
-				<div className={modalBodyRecipe()}>{children}</div>
+				<div className={styles.body}>{children}</div>
 			</div>
 		</div>
-	);
-};
+	)
+}
 
-export default Modal;
+export default Modal

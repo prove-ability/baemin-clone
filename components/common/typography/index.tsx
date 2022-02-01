@@ -1,14 +1,12 @@
-import { typographyRecipe, TypographyVariants } from "components/common/typography/typography.css";
-
-interface Props extends TypographyVariants {
+interface Props {
 	text: string;
 	onClick?: () => void;
 }
 
-const Typography: React.FC<Props> = ({ text, fontSize = "12px", onClick }) => {
+const Typography: React.FC<Props> = ({ text, onClick }) => {
 	return (
 		<span
-			className={typographyRecipe({ fontSize, isHover: Boolean(onClick) })}
+			// className={typographyRecipe({ fontSize, isHover: Boolean(onClick) })}
 			onClick={onClick}
 		>
 			{text}
