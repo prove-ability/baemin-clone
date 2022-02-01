@@ -1,5 +1,4 @@
 import * as styles from "components/common/modal/modal.css"
-import { sprinkles } from "../theme.css"
 
 interface Props {
 	show: boolean

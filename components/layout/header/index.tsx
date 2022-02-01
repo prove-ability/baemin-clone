@@ -1,6 +1,8 @@
+import * as styles from "./header.css"
+
 function Header() {
 	return (
-		<header>
+		<header className={styles.header}>
 			{/* 서비스 전체보기 버튼 */}
 			<span />
 			{/* 주소 나열 및 클릭시 하단에 주소 설정 팝업 */}
@@ -8,7 +10,7 @@ function Header() {
 			{/* 알림 및 마이페이지 바로가기 */}
 			<span>SVG</span>
 		</header>
-	);
+	)
 }
 
-export default Header;
+export default Header

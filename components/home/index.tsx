@@ -1,4 +1,4 @@
-import Slider, { Item } from "components/common/slider";
+import Slider, { Item } from "components/common/slider"
 
 function Home() {
 	const items: Item[] = [
@@ -17,16 +17,15 @@ function Home() {
 			caption: "baemin6",
 			path: "http://t1.daumcdn.net/brunch/service/user/4OZm/image/_3p_nMCKQt1KBQcvc7bFYr3jcYc",
 		},
-	];
+	]
 	return (
 		<div>
 			{/* 케러셀 */}
 			<div>
 				<Slider items={items} />
-				<Slider items={items} />
 			</div>
 		</div>
-	);
+	)
 }
 
-export default Home;
+export default Home

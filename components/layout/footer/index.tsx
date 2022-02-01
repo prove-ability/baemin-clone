@@ -1,9 +1,8 @@
 import Modal from "components/common/modal"
-import Slider, { Item } from "components/common/slider"
 import Typography from "components/common/typography"
+import * as styles from "./footer.css"
 
 import { useState } from "react"
-import { sprinkles } from "../../common/theme.css"
 
 function Footer() {
 	// 사업자정보확인
@@ -25,7 +24,7 @@ function Footer() {
 
 	return (
 		<>
-			<footer>
+			<footer className={styles.footer}>
 				{/* 약관들 */}
 				<div>
 					<ul>

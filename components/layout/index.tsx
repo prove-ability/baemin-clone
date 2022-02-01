@@ -1,21 +1,13 @@
-import Footer from "./footer"
-import Header from "./header"
-// import { layoutRecipe, wrapperRecipe } from "components/layout/layout.css";
-import Nav from "./nav"
-import { sprinkles } from "components/common/theme.css"
+import Header from "components/layout/header"
+import Footer from "components/layout/footer"
+import Nav from "components/layout/nav"
+
+import * as styles from "components/layout/layout.css"
 
 const Layout: React.FC = ({ children }) => {
 	return (
-		<div
-		// className={sprinkles({
-		// 	padding: { mobile: "small" },
-		// 	color: { lightMode: "pink", darkMode: "pink" },
-		// 	background: { lightMode: "white", darkMode: "white" },
-		// })}
-		>
-			<div
-			// className={wrapperRecipe()}
-			>
+		<div className={styles.container}>
+			<div className={styles.wrapper}>
 				<Header />
 				<main>{children}</main>
 				<Footer />
