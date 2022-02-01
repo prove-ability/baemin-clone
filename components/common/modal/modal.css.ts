@@ -15,7 +15,7 @@ const containerStyle = style([
 		top: "0",
 		left: "0",
 		width: "100%",
-		transition: "transform 10s ease",
+		transition: "transform 1.5s ease",
 	},
 ])
 
@@ -40,7 +40,7 @@ export const container = recipe({
 // wrapper
 export const wrapper = style([
 	sprinkles({
-		background: "white",
+		background: "light",
 		paddingX: "medium",
 	}),
 	{

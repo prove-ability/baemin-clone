@@ -1,18 +1,22 @@
 import { defineProperties, createSprinkles } from "@vanilla-extract/sprinkles"
 import { createGlobalTheme } from "@vanilla-extract/css"
 
+// color palette
+// #222831
+// #393E46
+// #00ADB5
+// #EEEEEE
+
 export const vars = createGlobalTheme(":root", {
 	colors: {
 		text: {
-			blud: "blue",
-			pink: "pink",
-			aqua: "aqua",
-			navy: "navy",
+			default: "#EEEEEE",
 		},
 		background: {
-			white: "white",
-			gray: "gray",
-			dark: "#000",
+			default: "#393E46",
+			dark: "#222831",
+			light: "#EEEEEE",
+			main: "#00ADB5",
 			dimmed: "rgba(0, 0, 0, 0.3)",
 		},
 	},
@@ -41,6 +45,7 @@ const responsiveProperties = defineProperties({
 	},
 	defaultCondition: "mobile",
 	properties: {
+		maxWidth: ["768px"],
 		display: ["none", "flex", "block", "inline"],
 		flexDirection: ["row", "column"],
 		justifyContent: [
