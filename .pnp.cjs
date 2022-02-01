@@ -43,6 +43,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@vanilla-extract/css", "npm:1.6.8"],
             ["@vanilla-extract/next-plugin", "virtual:5763de0ef8191760cc70761d5477b02febb024b9e9efdcfe55c93c4ba0e58b9c2648e3a82abd918646c224b0c3217abff01b7256d06a2256ff33bafec888aa52#npm:2.0.1"],
             ["@vanilla-extract/recipes", "virtual:5763de0ef8191760cc70761d5477b02febb024b9e9efdcfe55c93c4ba0e58b9c2648e3a82abd918646c224b0c3217abff01b7256d06a2256ff33bafec888aa52#npm:0.2.3"],
+            ["@vanilla-extract/sprinkles", "virtual:5763de0ef8191760cc70761d5477b02febb024b9e9efdcfe55c93c4ba0e58b9c2648e3a82abd918646c224b0c3217abff01b7256d06a2256ff33bafec888aa52#npm:1.3.3"],
             ["eslint", "npm:8.7.0"],
             ["eslint-config-next", "virtual:5763de0ef8191760cc70761d5477b02febb024b9e9efdcfe55c93c4ba0e58b9c2648e3a82abd918646c224b0c3217abff01b7256d06a2256ff33bafec888aa52#npm:12.0.8"],
             ["lodash", "npm:4.17.21"],
@@ -881,6 +882,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@vanilla-extract/sprinkles", [
+        ["npm:1.3.3", {
+          "packageLocation": "./.yarn/cache/@vanilla-extract-sprinkles-npm-1.3.3-db35e7f4c5-68cff1633a.zip/node_modules/@vanilla-extract/sprinkles/",
+          "packageDependencies": [
+            ["@vanilla-extract/sprinkles", "npm:1.3.3"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:5763de0ef8191760cc70761d5477b02febb024b9e9efdcfe55c93c4ba0e58b9c2648e3a82abd918646c224b0c3217abff01b7256d06a2256ff33bafec888aa52#npm:1.3.3", {
+          "packageLocation": "./.yarn/__virtual__/@vanilla-extract-sprinkles-virtual-61166c406b/0/cache/@vanilla-extract-sprinkles-npm-1.3.3-db35e7f4c5-68cff1633a.zip/node_modules/@vanilla-extract/sprinkles/",
+          "packageDependencies": [
+            ["@vanilla-extract/sprinkles", "virtual:5763de0ef8191760cc70761d5477b02febb024b9e9efdcfe55c93c4ba0e58b9c2648e3a82abd918646c224b0c3217abff01b7256d06a2256ff33bafec888aa52#npm:1.3.3"],
+            ["@types/vanilla-extract__css", null],
+            ["@vanilla-extract/css", "npm:1.6.8"]
+          ],
+          "packagePeers": [
+            "@types/vanilla-extract__css",
+            "@vanilla-extract/css"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@vanilla-extract/webpack-plugin", [
         ["npm:2.1.5", {
           "packageLocation": "./.yarn/cache/@vanilla-extract-webpack-plugin-npm-2.1.5-b2df9cfced-842c66b91e.zip/node_modules/@vanilla-extract/webpack-plugin/",
@@ -1086,6 +1109,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@vanilla-extract/css", "npm:1.6.8"],
             ["@vanilla-extract/next-plugin", "virtual:5763de0ef8191760cc70761d5477b02febb024b9e9efdcfe55c93c4ba0e58b9c2648e3a82abd918646c224b0c3217abff01b7256d06a2256ff33bafec888aa52#npm:2.0.1"],
             ["@vanilla-extract/recipes", "virtual:5763de0ef8191760cc70761d5477b02febb024b9e9efdcfe55c93c4ba0e58b9c2648e3a82abd918646c224b0c3217abff01b7256d06a2256ff33bafec888aa52#npm:0.2.3"],
+            ["@vanilla-extract/sprinkles", "virtual:5763de0ef8191760cc70761d5477b02febb024b9e9efdcfe55c93c4ba0e58b9c2648e3a82abd918646c224b0c3217abff01b7256d06a2256ff33bafec888aa52#npm:1.3.3"],
             ["eslint", "npm:8.7.0"],
             ["eslint-config-next", "virtual:5763de0ef8191760cc70761d5477b02febb024b9e9efdcfe55c93c4ba0e58b9c2648e3a82abd918646c224b0c3217abff01b7256d06a2256ff33bafec888aa52#npm:12.0.8"],
             ["lodash", "npm:4.17.21"],
