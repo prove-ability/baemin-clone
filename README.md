@@ -38,5 +38,14 @@ Error: Failed to read source code from /Volumes/workspace/crm-cloude/.yarn/__vir
 -   테마를 유틸 폴더로 변경 및 각각 css 파일을 컴포넌트 옆으로 변경해보자
 -   https://codesandbox.io/s/08gyg?file=/src/global.css.ts
 
-해당 문서 참고
-https://vanilla-extract.style/documentation/recipes-api/#recipevariants
+#### 22.02.01
+
+-   vanilla-extract 전체 구조 변경 / style + recipe + globalTheme(vars) 활용
+-   롤 듀오 구하는 사이트 방향으로 기획 잡음
+-   공톰 컴포넌트 타입 생성시 사용
+    https://vanilla-extract.style/documentation/recipes-api/#recipevariants
+
+#### 22.02.01
+
+-   스토리북 설정
+-   jest 설정
