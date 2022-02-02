@@ -52,6 +52,11 @@ Error: Failed to read source code from /Volumes/workspace/crm-cloude/.yarn/__vir
 
 #### 22.02.02
 
-https://github.com/yarnpkg/berry/issues/3687
-
+-   import 이슈로 yarn 버전 변경
+    https://github.com/yarnpkg/berry/issues/3687
 -   react-hook-form
+-   소환사 등록하기 버튼 추가
+
+#### 22.02.03
+
+-   스토리북 재도전
