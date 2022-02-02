@@ -1,14 +1,14 @@
 import { ButtonHTMLAttributes } from "react";
-import { buttonRecipe } from "./button.css";
 // import { buttonRecipe } from "styles/components/button.css";
 
-interface Props extends Pick<ButtonHTMLAttributes<HTMLButtonElement>, "type"> {
+interface Props
+	extends Pick<ButtonHTMLAttributes<HTMLButtonElement>, "type" | "onClick"> {
 	recipe?: "default";
 }
 
-const Button: React.FC<Props> = ({ children, type = "button", recipe = "default" }) => {
+const Button: React.FC<Props> = ({ children, type = "button", ...rest }) => {
 	return (
-		<button className={buttonRecipe()} type={type}>
+		<button type={type} {...rest}>
 			{children}
 		</button>
 	);

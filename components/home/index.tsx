@@ -1,31 +1,89 @@
-import Slider, { Item } from "components/common/slider"
+import { useState } from "react";
+
+import Button from "components/common/button";
+import List from "components/common/list/list";
+import Modal from "components/common/modal";
+import SummerRegisterForm from "./summerRegisterForm";
+import * as styles from "./home.css";
+import { IRow } from "../common/list/row";
 
 function Home() {
-	const items: Item[] = [
-		{ caption: "baemin1", path: "http://img.woowahan.com/www/common/baemin.jpg" },
+	// 유저리스트
+	const headers = [
+		"소환사 이름",
+		"주포시젼",
+		"티어",
+		"최근 선호 챔피언",
+		"승률",
+		"메모",
+		"등록일시",
+	];
+	const rows: IRow[] = [
 		{
-			caption: "baemin2",
-			path: "https://cdn.dailyimpact.co.kr/news/photo/201901/50618_9997_5649.jpg",
+			name: "이름입니다",
+			position: "jungle",
+			tier: "실버",
+			resent: "최근 챔피언",
+			rate: "50",
+			memo: "이겨주시면 돈드려요 편하게 친추 주세요",
+			createdAt: "22.22.22",
 		},
 		{
-			caption: "baemin3",
-			path: "https://miro.medium.com/max/992/1*DVM8hgRJalsAeayE3CEvAg.png",
+			name: "이름입니다",
+			position: "jungle",
+			tier: "실버",
+			resent: "최근 챔피언",
+			rate: "50",
+			memo: "이겨주시면 돈드려요 편하게 친추 주세요",
+			createdAt: "22.22.22",
 		},
-		{ caption: "baemin4", path: "https://t1.daumcdn.net/cfile/tistory/99B879455EA790590D" },
-		{ caption: "baemin5", path: "https://t1.daumcdn.net/cfile/tistory/99E208435FB6322304" },
 		{
-			caption: "baemin6",
-			path: "http://t1.daumcdn.net/brunch/service/user/4OZm/image/_3p_nMCKQt1KBQcvc7bFYr3jcYc",
+			name: "이름입니다",
+			position: "jungle",
+			tier: "실버",
+			resent: "최근 챔피언",
+			rate: "50",
+			memo: "이겨주시면 돈드려요 편하게 친추 주세요",
+			createdAt: "22.22.22",
 		},
-	]
+		{
+			name: "이름입니다",
+			position: "jungle",
+			tier: "실버",
+			resent: "최근 챔피언",
+			rate: "50",
+			memo: "이겨주시면 돈드려요 편하게 친추 주세요",
+			createdAt: "22.22.22",
+		},
+	];
+
+	// 소환사 등록 로직
+	const [showModal, setShowModal] = useState(true);
+	const onOpenShowModal = () => setShowModal(true);
+	const onCloseShowModal = () => setShowModal(false);
+
 	return (
-		<div>
-			{/* 케러셀 */}
+		<>
 			<div>
-				<Slider items={items} />
+				{/* 소환사 등록 버튼 */}
+				<div className={styles.buttonWrapper}>
+					<Button onClick={onOpenShowModal}>소환사 등록</Button>
+				</div>
+				{/* 유저리스트 */}
+				<div>
+					<List headers={headers} rows={rows} />
+				</div>
 			</div>
-		</div>
-	)
+			<Modal
+				size="mini"
+				show={showModal}
+				title="소환사 등록하기"
+				onClose={onCloseShowModal}
+			>
+				<SummerRegisterForm />
+			</Modal>
+		</>
+	);
 }
 
-export default Home
+export default Home;

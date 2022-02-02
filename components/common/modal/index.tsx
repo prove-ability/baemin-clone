@@ -1,28 +1,43 @@
-import * as styles from "components/common/modal/modal.css"
+import * as styles from "components/common/modal/modal.css";
+import { useEffect } from "react";
 
 interface Props {
-	show: boolean
-	onClose: () => void
-	title: string
+	show: boolean;
+	onClose: () => void;
+	title: string;
+	size: "full" | "mini";
 }
 
-const Modal: React.FC<Props> = ({ show, onClose, children, title }) => {
+const Modal: React.FC<Props> = ({
+	show,
+	onClose,
+	children,
+	title,
+	size = "full",
+}) => {
 	const handleCloseClick = (e: React.MouseEvent<HTMLSpanElement>) => {
-		e.preventDefault()
-		onClose()
-	}
+		e.preventDefault();
+		onClose();
+	};
+
+	useEffect(() => {
+		document.body.style.overflow = "hidden";
+		return () => {
+			document.body.style.overflow = "unset";
+		};
+	}, []);
 
 	return (
 		<div className={styles.container({ show })}>
-			<div className={styles.wrapper}>
+			<div className={styles.wrapper({ size })}>
 				<div className={styles.header}>
+					<span>{title}</span>
 					<span onClick={handleCloseClick}>x</span>
 				</div>
-				{title && <p>{title}</p>}
 				<div className={styles.body}>{children}</div>
 			</div>
 		</div>
-	)
-}
+	);
+};
 
-export default Modal
+export default Modal;
