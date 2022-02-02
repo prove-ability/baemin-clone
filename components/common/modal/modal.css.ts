@@ -1,23 +1,22 @@
-import { style } from "@vanilla-extract/css"
-import { recipe } from "@vanilla-extract/recipes"
-import { sprinkles } from "components/common/theme.css"
+import { style } from "@vanilla-extract/css";
+import { recipe } from "@vanilla-extract/recipes";
+import { sprinkles } from "components/common/theme.css";
 
 // container
 const containerStyle = style([
 	sprinkles({
 		zIndex: "9999",
-		display: "flex",
-		placeItems: "center",
 		background: "dimmed",
 	}),
 	{
-		position: "absolute",
+		position: "fixed",
 		top: "0",
 		left: "0",
+		bottom: "0",
 		width: "100%",
 		transition: "transform 1.5s ease",
 	},
-])
+]);
 
 export const container = recipe({
 	base: containerStyle,
@@ -35,20 +34,38 @@ export const container = recipe({
 		},
 	},
 	defaultVariants: { show: false },
-})
+});
 
 // wrapper
-export const wrapper = style([
+const wrapperStyle = style([
 	sprinkles({
 		background: "light",
-		paddingX: "medium",
+		padding: "medium",
 	}),
 	{
+		position: "absolute",
+		left: "50%",
+		top: "50%",
+		transform: "translate(-50%, -50%)",
 		width: "100%",
 		maxWidth: "769px",
 		height: "100%",
 	},
-])
+]);
+
+export const wrapper = recipe({
+	base: wrapperStyle,
+	variants: {
+		size: {
+			full: {},
+			mini: {
+				width: "auto",
+				height: "auto",
+			},
+		},
+	},
+	defaultVariants: { size: "full" },
+});
 
 // header
 export const header = style([
@@ -56,7 +73,7 @@ export const header = style([
 		display: "flex",
 		placeItems: "center",
 	}),
-])
+]);
 
 // body
-export const body = style([sprinkles({ paddingTop: "medium" })])
+export const body = style([sprinkles({ paddingTop: "medium" })]);

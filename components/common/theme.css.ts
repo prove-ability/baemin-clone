@@ -1,5 +1,5 @@
-import { defineProperties, createSprinkles } from "@vanilla-extract/sprinkles"
-import { createGlobalTheme } from "@vanilla-extract/css"
+import { defineProperties, createSprinkles } from "@vanilla-extract/sprinkles";
+import { createGlobalTheme } from "@vanilla-extract/css";
 
 // color palette
 // #222831
@@ -11,6 +11,7 @@ export const vars = createGlobalTheme(":root", {
 	colors: {
 		text: {
 			default: "#EEEEEE",
+			error: "red",
 		},
 		background: {
 			default: "#393E46",
@@ -28,6 +29,7 @@ export const vars = createGlobalTheme(":root", {
 	zIndex: {
 		auto: "auto",
 		"9999": "9999",
+		"10000": "10000",
 		"100": "100",
 		"200": "200",
 		"300": "300",
@@ -35,7 +37,7 @@ export const vars = createGlobalTheme(":root", {
 		"500": "500",
 		"600": "600",
 	},
-})
+});
 
 const responsiveProperties = defineProperties({
 	conditions: {
@@ -70,7 +72,7 @@ const responsiveProperties = defineProperties({
 		paddingY: ["paddingTop", "paddingBottom"],
 		placeItems: ["justifyContent", "alignItems"],
 	},
-})
+});
 
 const colorProperties = defineProperties({
 	conditions: {
@@ -83,9 +85,9 @@ const colorProperties = defineProperties({
 		background: vars.colors.background,
 		// etc.
 	},
-})
+});
 
-export const sprinkles = createSprinkles(responsiveProperties, colorProperties)
+export const sprinkles = createSprinkles(responsiveProperties, colorProperties);
 
 // It's a good idea to export the Sprinkles type too
-export type Sprinkles = Parameters<typeof sprinkles>[0]
+export type Sprinkles = Parameters<typeof sprinkles>[0];

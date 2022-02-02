@@ -1,5 +1,5 @@
-import { style } from "@vanilla-extract/css"
-import { sprinkles } from "components/common/theme.css"
+import { style } from "@vanilla-extract/css";
+import { sprinkles } from "components/common/theme.css";
 
 export const container = style([
 	sprinkles({
@@ -13,7 +13,7 @@ export const container = style([
 		width: "100%",
 		height: "32px",
 	},
-])
+]);
 
 export const ul = style([
 	sprinkles({
@@ -21,7 +21,7 @@ export const ul = style([
 		flexDirection: "row",
 	}),
 	{ height: "100%" },
-])
+]);
 
 export const li = style([
 	sprinkles({
@@ -31,4 +31,4 @@ export const li = style([
 	{
 		flex: 1,
 	},
-])
+]);

@@ -1,5 +1,5 @@
-import { style } from "@vanilla-extract/css"
-import { sprinkles } from "components/common/theme.css"
+import { style } from "@vanilla-extract/css";
+import { sprinkles } from "components/common/theme.css";
 
 export const header = style([
 	sprinkles({
@@ -17,7 +17,7 @@ export const header = style([
 		width: "100%",
 		height: "32px",
 	},
-])
+]);
 
 // export const wrapper = style([
 // 	sprinkles({

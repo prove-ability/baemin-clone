@@ -1,5 +1,5 @@
-import { style } from "@vanilla-extract/css"
-import { sprinkles } from "../../common/theme.css"
+import { style } from "@vanilla-extract/css";
+import { sprinkles } from "../../common/theme.css";
 
 export const footer = style([
 	sprinkles({
@@ -8,4 +8,4 @@ export const footer = style([
 	{
 		marginTop: "auto",
 	},
-])
+]);
