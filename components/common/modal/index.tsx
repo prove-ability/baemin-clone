@@ -15,11 +15,9 @@ const Modal: React.FC<Props> = ({ show, onClose, children, title, size }) => {
 	};
 
 	useEffect(() => {
-		document.body.style.overflow = "hidden";
-		return () => {
-			document.body.style.overflow = "unset";
-		};
-	}, []);
+		if (show) document.body.style.overflow = "hidden";
+		else document.body.style.overflow = "unset";
+	}, [show]);
 
 	return (
 		<div className={styles.container({ show })}>
