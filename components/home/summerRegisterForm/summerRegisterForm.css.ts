@@ -1,5 +1,5 @@
 import { style } from "@vanilla-extract/css";
-import { sprinkles } from "components/common/theme.css";
+import { sprinkles } from "styles/theme.css";
 
 // container
 export const error = style([

@@ -1,5 +1,5 @@
 import { style } from "@vanilla-extract/css";
-import { sprinkles } from "../../common/theme.css";
+import { sprinkles } from "../../../styles/theme.css";
 
 export const footer = style([
 	sprinkles({

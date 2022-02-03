@@ -1,4 +1,4 @@
-import * as styles from "components/common/modal/modal.css";
+import * as styles from "./modal.css";
 import { useEffect } from "react";
 
 interface Props {
@@ -8,13 +8,7 @@ interface Props {
 	size: "full" | "mini";
 }
 
-const Modal: React.FC<Props> = ({
-	show,
-	onClose,
-	children,
-	title,
-	size = "full",
-}) => {
+const Modal: React.FC<Props> = ({ show, onClose, children, title, size }) => {
 	const handleCloseClick = (e: React.MouseEvent<HTMLSpanElement>) => {
 		e.preventDefault();
 		onClose();
@@ -40,4 +34,5 @@ const Modal: React.FC<Props> = ({
 	);
 };
 
+Modal.displayName = "Modal";
 export default Modal;

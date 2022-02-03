@@ -1,6 +1,17 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
+    "paths": {
+      "components/*": [
+        "components/*"
+      ],
+      "pages/*": [
+        "pages/*"
+      ],
+      "styles/*": [
+        "styles/*"
+      ]
+    },
     "target": "es5",
     "lib": [
       "dom",
@@ -25,7 +36,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "components/common/button/button.stories.tsx"
+    "components/common/button/button.stories.mdx"
   ],
   "exclude": [
     "node_modules"
