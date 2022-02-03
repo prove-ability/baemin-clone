@@ -21,7 +21,7 @@ enum Queue {
 
 const schema = z.object({
 	name: z.string().nonempty({ message: "Required" }),
-	mostPosition: z.nativeEnum(Position).optional(),
+	mostPosition: z.nativeEnum(Position),
 	queueType: z.nativeEnum(Queue),
 	useMike: z.boolean({
 		required_error: "useMike is required",
@@ -45,6 +45,9 @@ function SummerRegisterForm() {
 		formState: { errors },
 	} = useForm<FormData>({
 		resolver: zodResolver(schema),
+		defaultValues: {
+			mostPosition: Position.All,
+		},
 	});
 
 	return (
@@ -68,7 +71,6 @@ function SummerRegisterForm() {
 							type="radio"
 							value={Position["All"]}
 							id="all"
-							checked
 						/>
 					</label>
 					<label htmlFor="top">
