@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+button,
 html,
 body,
 div,
@@ -125,10 +125,8 @@ q:after {
 }
 table {
 	border-collapse: collapse;
-}
-* {
 	border-spacing: 0;
 }
-html {
-	background-color: #393e46;
+* {
+	box-sizing: 0;
 }
