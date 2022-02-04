@@ -37,6 +37,26 @@ export const vars = createGlobalTheme(":root", {
 		"500": "500",
 		"600": "600",
 	},
+	fontSizes: {
+		xxs: "12px",
+		xs: "13px",
+		sm: "14px",
+		base: "16px",
+		md: "18px",
+		lg: "24px",
+	},
+	fontWeight: {
+		400: "400",
+		500: "500",
+		600: "600",
+		700: "700",
+	},
+	borderRadius: {
+		circle: "50%",
+		8: "8px",
+		16: "16px",
+		24: "24px",
+	},
 });
 
 const responsiveProperties = defineProperties({
@@ -84,10 +104,46 @@ const colorProperties = defineProperties({
 		color: vars.colors.text,
 		background: vars.colors.background,
 		// etc.
+		borderColor: vars.colors.background,
 	},
 });
 
-export const sprinkles = createSprinkles(responsiveProperties, colorProperties);
+// const fontProperties = defineProperties({
+// 	properties: {
+// 		fontSize: {
+// 			xxs: "12px",
+// 			xs: "13px",
+// 			sm: "14px",
+// 			base: "16px",
+// 			md: "18px",
+// 			lg: "24px",
+// 		},
+// 		fontWeight: {
+// 			400: "400",
+// 			500: "500",
+// 			600: "600",
+// 			700: "700",
+// 		},
+// 	},
+// });
+
+const borderRadiusProperties = defineProperties({
+	properties: {
+		borderRadius: {
+			circle: vars.borderRadius.circle,
+			8: vars.borderRadius[8],
+			16: vars.borderRadius[16],
+			24: vars.borderRadius[24],
+		},
+	},
+});
+
+export const sprinkles = createSprinkles(
+	responsiveProperties,
+	colorProperties,
+	borderRadiusProperties
+	// fontProperties
+);
 
 // It's a good idea to export the Sprinkles type too
 export type Sprinkles = Parameters<typeof sprinkles>[0];
