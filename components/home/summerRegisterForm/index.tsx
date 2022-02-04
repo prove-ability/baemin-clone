@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import * as styles from "./summerRegisterForm.css";
+import ModalButtons from "components/common/modal/modalButtons";
 
 enum Position {
 	All = "ALL",
@@ -153,7 +154,8 @@ function SummerRegisterForm() {
 				</div>
 				<p className={styles.error}>{errors.password?.message}</p>
 				{/*  */}
-				<button type="submit">SetValue</button>
+				<ModalButtons isSubmit={true} />
+				{/* <button type="submit">SetValue</button> */}
 			</form>
 		</div>
 	);
