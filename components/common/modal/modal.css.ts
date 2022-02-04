@@ -39,8 +39,10 @@ export const container = recipe({
 // wrapper
 const wrapperStyle = style([
 	sprinkles({
-		background: "light",
+		borderRadius: 8,
+		background: "default",
 		padding: "medium",
+		color: "default",
 	}),
 	{
 		position: "absolute",
@@ -50,6 +52,7 @@ const wrapperStyle = style([
 		width: "100%",
 		maxWidth: "769px",
 		height: "100%",
+		// borderRadius: "",
 	},
 ]);
 
@@ -71,7 +74,8 @@ export const wrapper = recipe({
 export const header = style([
 	sprinkles({
 		display: "flex",
-		placeItems: "center",
+		alignItems: "center",
+		justifyContent: "space-between",
 	}),
 ]);
 

@@ -16,6 +16,7 @@ export const label = style([
 		display: "flex",
 		alignItems: "center",
 		justifyContent: "space-between",
+		color: "default",
 	}),
 	{},
 ]);
