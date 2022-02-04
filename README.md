@@ -59,6 +59,11 @@ Error: Failed to read source code from /Volumes/workspace/crm-cloude/.yarn/__vir
 
 #### 22.02.03
 
--   스토리북 재도전
+-   스토리북 완료
 -   yarn version set classic
     https://velog.io/@bard/Nextjs-Storybook
+
+#### 22.02.04
+
+-   테마 시스템 색상 변경 - 내일 팔레트를 추가할 듯
+-   타이포그래피, 모달, 버튼 -업데이트
