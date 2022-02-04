@@ -1,5 +1,6 @@
 import * as styles from "./modal.css";
 import { useEffect } from "react";
+import Typography from "../typography";
 
 interface Props {
 	show: boolean;
@@ -20,15 +21,22 @@ const Modal: React.FC<Props> = ({ show, onClose, children, title, size }) => {
 	}, [show]);
 
 	return (
-		<div className={styles.container({ show })}>
-			<div className={styles.wrapper({ size })}>
-				<div className={styles.header}>
-					<span>{title}</span>
-					<span onClick={handleCloseClick}>x</span>
+		<>
+			<div className={styles.container({ show })}>
+				<div className={styles.wrapper({ size })}>
+					<div className={styles.header}>
+						<span />
+						<span>
+							<Typography size="medium" weight={500}>
+								{title}
+							</Typography>
+						</span>
+						<span onClick={handleCloseClick}>x</span>
+					</div>
+					<div className={styles.body}>{children}</div>
 				</div>
-				<div className={styles.body}>{children}</div>
 			</div>
-		</div>
+		</>
 	);
 };
 
