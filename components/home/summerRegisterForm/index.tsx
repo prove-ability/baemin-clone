@@ -140,7 +140,7 @@ function SummerRegisterForm() {
 				<p className={styles.error}>{errors.memo?.message}</p>
 				{/* password */}
 				<div className={styles.row}>
-					<label className={styles.label}>
+					<label className={styles.label} htmlFor="password">
 						삭제 비밀번호
 						<Controller
 							name="password"
