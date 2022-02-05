@@ -67,3 +67,8 @@ Error: Failed to read source code from /Volumes/workspace/crm-cloude/.yarn/__vir
 
 -   테마 시스템 색상 변경 - 내일 팔레트를 추가할 듯
 -   타이포그래피, 모달, 버튼 -업데이트
+
+#### 22.02.05
+
+-   소환사 등록 화면
+-   storybook 작업 및 테스트 시나리오 작성
