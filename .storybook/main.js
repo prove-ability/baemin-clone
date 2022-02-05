@@ -7,6 +7,7 @@ module.exports = {
 		"@storybook/addon-essentials",
 		"@storybook/addon-postcss",
 		"@storybook/addon-docs",
+		"@storybook/addon-interactions",
 	],
 	framework: "@storybook/react",
 	webpackFinal: async (config) => {
