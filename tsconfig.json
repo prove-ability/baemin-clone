@@ -36,7 +36,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "components/common/button/button.stories.mdx"
+    "components/common/button/button.stories.mdx",
+    "components/common/input/input.stories.mdx"
   ],
   "exclude": [
     "node_modules"
