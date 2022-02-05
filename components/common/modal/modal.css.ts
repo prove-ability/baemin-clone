@@ -1,6 +1,6 @@
 import { style } from "@vanilla-extract/css";
 import { recipe } from "@vanilla-extract/recipes";
-import { sprinkles } from "styles/theme.css";
+import { sprinkles, vars } from "styles/theme.css";
 
 // container
 const containerStyle = style([
@@ -81,3 +81,16 @@ export const header = style([
 
 // body
 export const body = style([sprinkles({ paddingTop: "medium" })]);
+
+// close
+export const close = style([
+	sprinkles({}),
+	{
+		selectors: {
+			"&:hover": {
+				cursor: "pointer",
+				color: vars.colors.text.error,
+			},
+		},
+	},
+]);
