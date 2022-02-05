@@ -11,6 +11,7 @@ export const vars = createGlobalTheme(":root", {
 	colors: {
 		text: {
 			default: "#EEEEEE",
+			dark: "#222",
 			error: "red",
 		},
 		background: {

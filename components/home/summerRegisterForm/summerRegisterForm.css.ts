@@ -14,7 +14,8 @@ export const row = style([sprinkles({}), {}]);
 export const label = style([
 	sprinkles({
 		display: "flex",
-		alignItems: "center",
+		flexDirection: "column",
+		alignItems: "flex-start",
 		justifyContent: "space-between",
 		color: "default",
 	}),
