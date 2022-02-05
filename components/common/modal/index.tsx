@@ -31,7 +31,12 @@ const Modal: React.FC<Props> = ({ show, onClose, children, title, size }) => {
 								{title}
 							</Typography>
 						</span>
-						<span onClick={handleCloseClick}>x</span>
+						<span
+							className={styles.close}
+							onClick={handleCloseClick}
+						>
+							x
+						</span>
 					</div>
 					<div className={styles.body}>{children}</div>
 				</div>
