@@ -1406,6 +1406,17 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
+"@jest/types@^27.5.0":
+  version "27.5.0"
+  resolved "https://registry.yarnpkg.com/@jest/types/-/types-27.5.0.tgz#6ad04a5c5355fd9f46e5cf761850e0edb3c209dd"
+  integrity sha512-oDHEp7gwSgA82RZ6pzUL3ugM2njP/lVB1MsxRZNOBk+CoNvh9SpH1lQixPFc/kDlV50v59csiW4HLixWmhmgPQ==
+  dependencies:
+    "@types/istanbul-lib-coverage" "^2.0.0"
+    "@types/istanbul-reports" "^3.0.0"
+    "@types/node" "*"
+    "@types/yargs" "^16.0.0"
+    chalk "^4.0.0"
+
 "@jridgewell/resolve-uri@^3.0.3":
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/@jridgewell/resolve-uri/-/resolve-uri-3.0.4.tgz#b876e3feefb9c8d3aa84014da28b5e52a0640d72"
@@ -1770,6 +1781,24 @@
     regenerator-runtime "^0.13.7"
     ts-dedent "^2.0.0"
 
+"@storybook/addon-interactions@^6.4.18":
+  version "6.4.18"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-interactions/-/addon-interactions-6.4.18.tgz#1e398d41307594adf53e44692316100a4afa7644"
+  integrity sha512-Zza15AOhILNDoLwVO/BUgtwM9tiVkAfA7BvtvK7Ilxita73e3w+k/xcwWN0q32OqOLhYFZkF2yWxFWmPtDJHtg==
+  dependencies:
+    "@storybook/addons" "6.4.18"
+    "@storybook/api" "6.4.18"
+    "@storybook/components" "6.4.18"
+    "@storybook/core-common" "6.4.18"
+    "@storybook/core-events" "6.4.18"
+    "@storybook/csf" "0.0.2--canary.87bc651.0"
+    "@storybook/instrumenter" "6.4.18"
+    "@storybook/theming" "6.4.18"
+    global "^4.4.0"
+    jest-mock "^27.0.6"
+    polished "^4.0.5"
+    ts-dedent "^2.2.0"
+
 "@storybook/addon-links@^6.4.18":
   version "6.4.18"
   resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-6.4.18.tgz#edb61db6c291056f7d3c64566aea436a6796c50a"
@@ -2032,7 +2061,7 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/client-logger@6.4.18", "@storybook/client-logger@^6.4.0":
+"@storybook/client-logger@6.4.18", "@storybook/client-logger@^6.4.0 || >=6.5.0-0":
   version "6.4.18"
   resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-6.4.18.tgz#4ad8ea7d67b17e5db8f15cffcc2f984df3479462"
   integrity sha512-ciBaASMaB2ZPksbuyDbp3++5SZxbhcihEpl+RQcAVV8g+TUyBZKIcHt8HNHicTczz5my1EydZovMh1IkSBMICA==
@@ -2244,7 +2273,7 @@
   dependencies:
     lodash "^4.17.15"
 
-"@storybook/instrumenter@^6.4.0":
+"@storybook/instrumenter@6.4.18", "@storybook/instrumenter@^6.4.0 || >=6.5.0-0":
   version "6.4.18"
   resolved "https://registry.yarnpkg.com/@storybook/instrumenter/-/instrumenter-6.4.18.tgz#eae95de8591190dcc77042193200eac6f23dfe00"
   integrity sha512-YrHL678IY1Lvvy38Wt1EyD+T4QqhCBsivBdbikJbsnpVUUdGnDjcqdTVBxX0ti16O1XiFvk6kfUHGJjy5+vBMw==
@@ -2441,13 +2470,13 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/testing-library@^0.0.8":
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/@storybook/testing-library/-/testing-library-0.0.8.tgz#d5297051bb74eaf3374a462fea8330e01b5e8f11"
-  integrity sha512-I50xK6Pn2RyjFJ1XjHrhcCdOZwnvnlllsaA5ZdLZ+sZeOv+ly0uOZu9qbNP4Waw4dTTYEOf0QSEoAqZGHTqSOg==
+"@storybook/testing-library@^0.0.9":
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/@storybook/testing-library/-/testing-library-0.0.9.tgz#e3d6e8077d58305bb352903e820dcae9306e7a7f"
+  integrity sha512-X4/Tk7RryB0tZ/9NLUHYTBXW01zRpf6+IhdhqsVl6WOWRyUaIv3zEhr43gQyZhBe4ZZyt5d90FJC9qWmY1oFKg==
   dependencies:
-    "@storybook/client-logger" "^6.4.0"
-    "@storybook/instrumenter" "^6.4.0"
+    "@storybook/client-logger" "^6.4.0 || >=6.5.0-0"
+    "@storybook/instrumenter" "^6.4.0 || >=6.5.0-0"
     "@testing-library/dom" "^8.3.0"
     "@testing-library/user-event" "^13.2.1"
     ts-dedent "^2.2.0"
@@ -2768,6 +2797,13 @@
   version "15.0.14"
   resolved "https://registry.yarnpkg.com/@types/yargs/-/yargs-15.0.14.tgz#26d821ddb89e70492160b66d10a0eb6df8f6fb06"
   integrity sha512-yEJzHoxf6SyQGhBhIYGXQDSCkJjB6HohDShto7m8vaKg9Yp0Yn8+71J9eakh2bnPg6BfsH9PRMhiRTZnd4eXGQ==
+  dependencies:
+    "@types/yargs-parser" "*"
+
+"@types/yargs@^16.0.0":
+  version "16.0.4"
+  resolved "https://registry.yarnpkg.com/@types/yargs/-/yargs-16.0.4.tgz#26aad98dd2c2a38e421086ea9ad42b9e51642977"
+  integrity sha512-T8Yc9wt/5LbJyCaLiHPReJa0kApcIgJ7Bn735GjItUfh08Z1pJvu8QZqb9s+mMvKV6WUQRV7K2R46YbjMXTTJw==
   dependencies:
     "@types/yargs-parser" "*"
 
@@ -7119,6 +7155,14 @@ jest-haste-map@^26.6.2:
     walker "^1.0.7"
   optionalDependencies:
     fsevents "^2.1.2"
+
+jest-mock@^27.0.6:
+  version "27.5.0"
+  resolved "https://registry.yarnpkg.com/jest-mock/-/jest-mock-27.5.0.tgz#1018656fe6bcd0f58fd1edca7f420169f6707c6e"
+  integrity sha512-PHluG6MJGng82/sxh8OiB9fnxzNn3cazceSHCAmAKs4g5rMhc3EZCrJXv+4w61rA2WGagMUj7QLLrA1SRlFpzQ==
+  dependencies:
+    "@jest/types" "^27.5.0"
+    "@types/node" "*"
 
 jest-regex-util@^26.0.0:
   version "26.0.0"
