@@ -72,3 +72,8 @@ Error: Failed to read source code from /Volumes/workspace/crm-cloude/.yarn/__vir
 
 -   소환사 등록 화면
 -   storybook 작업 및 테스트 시나리오 작성
+
+#### 22.02.06
+
+-   공통 컴포넌트 스토리 파일 작성
+-   srotybook play 할용 테스트 코드 작성 [바로가기](https://velog.io/@bard/storybook-%EC%97%90%EC%84%9C-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%8B%9C%EB%82%98%EB%A6%AC%EC%98%A4-%EC%9E%91%EC%84%B1%ED%95%98%EA%B8%B0)
