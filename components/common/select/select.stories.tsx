@@ -6,7 +6,6 @@ import Select from ".";
 export default {
 	title: "Components/Select",
 	component: Select,
-	argTypes: { onChange: { action: "clicked" } },
 } as ComponentMeta<typeof Select>;
 
 //👇 We create a “template” of how args map to rendering
