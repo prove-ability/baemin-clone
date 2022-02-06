@@ -11,6 +11,17 @@ export default {
 	component: Button,
 } as ComponentMeta<typeof Button>;
 
-export const Default: ComponentStory<typeof Button> = () => (
-	<Button>Button</Button>
-);
+//👇 We create a “template” of how args map to rendering
+const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
+
+//👇 Each story then reuses that template
+export const Default = Template.bind({});
+Default.args = {
+	children: "버튼:D",
+	type: "button",
+	fullSize: false,
+	color: "default",
+};
+
+export const Primary = Template.bind({});
+Primary.args = { ...Default.args, color: "primary" };
