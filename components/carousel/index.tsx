@@ -1,5 +1,7 @@
-import _ from "lodash"
-import Carousel, { CarouselProps } from "nuka-carousel"
+import Image from "next/image";
+
+import _ from "lodash";
+import Carousel, { CarouselProps } from "nuka-carousel";
 
 // example
 // 케러셀
@@ -21,12 +23,12 @@ import Carousel, { CarouselProps } from "nuka-carousel"
 // 	},
 // ]
 export interface Item {
-	caption: string
-	path: string
+	caption: string;
+	path: string;
 }
 
 interface Props {
-	items: Item[]
+	items: Item[];
 }
 
 const Slider: React.FC<Props> = ({ items }) => {
@@ -41,11 +43,11 @@ const Slider: React.FC<Props> = ({ items }) => {
 			nextButtonStyle: { display: "none" },
 			pagingDotsStyle: { display: "none" },
 		},
-	}
+	};
 	return (
 		<Carousel {...settings}>
 			{_.map(items, (item, index) => (
-				<img
+				<Image
 					key={index}
 					src={item.path}
 					alt={item.caption}
@@ -54,7 +56,7 @@ const Slider: React.FC<Props> = ({ items }) => {
 				/>
 			))}
 		</Carousel>
-	)
-}
+	);
+};
 
-export default Slider
+export default Slider;
