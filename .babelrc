@@ -3,12 +3,6 @@
     "next/babel"
   ],
   "plugins": [
-    "@vanilla-extract/babel-plugin",
-    [
-      "@babel/plugin-proposal-private-property-in-object",
-      {
-        "loose": true
-      }
-    ]
+    "@vanilla-extract/babel-plugin"
   ]
 }
