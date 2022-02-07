@@ -68,9 +68,18 @@ function SummerRegisterForm() {
 		label: value,
 		value,
 	}));
+
+	const onCreateSummoner = async (d: FormData) => {
+		console.log(d);
+		const res = await fetch("https://api.backend.com/summoner", {
+			method: "POST",
+		}).then((res) => res.json());
+		console.log(res);
+	};
+
 	return (
 		<div>
-			<form onSubmit={handleSubmit((d) => console.log(d))}>
+			<form onSubmit={handleSubmit(onCreateSummoner)}>
 				{/* name */}
 				<div className={styles.row}>
 					<label className={styles.label} htmlFor="name">
