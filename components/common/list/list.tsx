@@ -4,10 +4,10 @@ import * as styles from "./list.css";
 
 interface Props {
 	headers?: string[];
-	rows: IRow[];
+	summoners: IRow[];
 }
 
-const List: React.FC<Props> = ({ headers, rows }) => {
+const List: React.FC<Props> = ({ headers, summoners }) => {
 	return (
 		<table className={styles.table}>
 			{headers && (
@@ -22,8 +22,8 @@ const List: React.FC<Props> = ({ headers, rows }) => {
 				</thead>
 			)}
 			<tbody>
-				{_.map(rows, (row, index) => (
-					<Row key={`row-${index}`} row={row} />
+				{_.map(summoners, (summoner, index) => (
+					<Row key={`row-${index}`} row={summoner} />
 				))}
 			</tbody>
 		</table>
