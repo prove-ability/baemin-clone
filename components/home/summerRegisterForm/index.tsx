@@ -96,11 +96,7 @@ function SummerRegisterForm() {
 							name="mostPosition"
 							control={control}
 							render={({ field }) => (
-								<Select
-									{...field}
-									id="mostPosition"
-									options={positionOptions}
-								/>
+								<Select {...field} id="mostPosition" options={positionOptions} />
 							)}
 						/>
 					</label>
@@ -113,13 +109,7 @@ function SummerRegisterForm() {
 						<Controller
 							name="queueType"
 							control={control}
-							render={({ field }) => (
-								<Select
-									{...field}
-									id="queueType"
-									options={queueOptions}
-								/>
-							)}
+							render={({ field }) => <Select {...field} id="queueType" options={queueOptions} />}
 						/>
 					</label>
 				</div>
@@ -132,9 +122,7 @@ function SummerRegisterForm() {
 						<Controller
 							name="useMike"
 							control={control}
-							render={({ field }) => (
-								<Toggle {...field} id="useMike" />
-							)}
+							render={({ field }) => <Toggle {...field} id="useMike" />}
 						/>
 					</label>
 				</div>
@@ -154,14 +142,7 @@ function SummerRegisterForm() {
 						<Controller
 							name="password"
 							control={control}
-							render={({ field }) => (
-								<Input
-									{...field}
-									id="password"
-									maxLength={4}
-									numbersOnly
-								/>
-							)}
+							render={({ field }) => <Input {...field} id="password" maxLength={4} numbersOnly />}
 						/>
 					</label>
 				</div>
