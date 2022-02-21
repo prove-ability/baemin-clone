@@ -18,46 +18,8 @@ function Home() {
 		"메모",
 		"등록일시",
 	];
-	const rows: IRow[] = [
-		{
-			name: "이름입니다",
-			position: "jungle",
-			tier: "실버",
-			resent: "최근 챔피언",
-			rate: "50",
-			memo: "이겨주시면 돈드려요 편하게 친추 주세요",
-			createdAt: "22.22.22",
-		},
-		{
-			name: "이름입니다",
-			position: "jungle",
-			tier: "실버",
-			resent: "최근 챔피언",
-			rate: "50",
-			memo: "이겨주시면 돈드려요 편하게 친추 주세요",
-			createdAt: "22.22.22",
-		},
-		{
-			name: "이름입니다",
-			position: "jungle",
-			tier: "실버",
-			resent: "최근 챔피언",
-			rate: "50",
-			memo: "이겨주시면 돈드려요 편하게 친추 주세요",
-			createdAt: "22.22.22",
-		},
-		{
-			name: "이름입니다",
-			position: "jungle",
-			tier: "실버",
-			resent: "최근 챔피언",
-			rate: "50",
-			memo: "이겨주시면 돈드려요 편하게 친추 주세요",
-			createdAt: "22.22.22",
-		},
-	];
 
-	// 소환사 등록 로직
+	const [summoners, setSummoners] = useState<IRow[]>([]);
 	const [showModal, setShowModal] = useState(true);
 	const onOpenShowModal = () => setShowModal(true);
 	const onCloseShowModal = () => setShowModal(false);
@@ -71,15 +33,10 @@ function Home() {
 				</div>
 				{/* 유저리스트 */}
 				<div>
-					<List headers={headers} rows={rows} />
+					<List headers={headers} summoners={summoners} />
 				</div>
 			</div>
-			<Modal
-				size="mini"
-				show={showModal}
-				title="소환사 등록하기"
-				onClose={onCloseShowModal}
-			>
+			<Modal size="mini" show={showModal} title="소환사 등록하기" onClose={onCloseShowModal}>
 				<SummerRegisterForm />
 			</Modal>
 		</>
