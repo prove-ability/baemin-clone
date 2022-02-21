@@ -130,3 +130,7 @@ table {
 * {
 	box-sizing: 0;
 }
+
+*:focus {
+	outline: 0;
+}
