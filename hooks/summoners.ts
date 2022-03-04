@@ -1,7 +1,8 @@
 import axios, { AxiosResponse } from "axios";
-import { useQuery } from "react-query";
+import { IRow } from "components/common/list/row";
+// import { useQuery } from "react-query";
 
-interface ISummoners {
+interface ISummoners extends IRow {
 	id: number;
 	name: string;
 	position: string;
@@ -13,7 +14,7 @@ interface ISummoners {
 }
 
 const instance = axios.create({
-	baseURL: "http://jsonplaceholder.typicode.com/",
+	baseURL: "https://api.backend.com/summoners",
 	timeout: 15000,
 });
 
@@ -27,11 +28,11 @@ const requests = {
 };
 
 export const Post = {
-	getPosts: (): Promise<ISummoners[]> => requests.get("summoners"),
-	getAPost: (id: number): Promise<ISummoners> => requests.get(`summoners/${id}`),
+	getPosts: (): Promise<ISummoners[]> => requests.get(""),
+	getAPost: (id: number): Promise<ISummoners> => requests.get(`/${id}`),
 	createPost: (post: Omit<ISummoners, "id">): Promise<ISummoners> =>
-		requests.post("summoners", post),
+		requests.post("", post),
 	updatePost: (post: Partial<ISummoners>, id: number): Promise<ISummoners> =>
-		requests.put(`summoners/${id}`, post),
+		requests.put(`/${id}`, post),
 	deletePost: (id: number): Promise<void> => requests.delete(`summoners/${id}`),
 };

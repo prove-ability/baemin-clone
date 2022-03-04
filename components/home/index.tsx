@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import Button from "components/common/button";
 import List from "components/common/list/list";
@@ -6,6 +6,7 @@ import Modal from "components/common/modal";
 import SummerRegisterForm from "./summerRegisterForm";
 import * as styles from "./home.css";
 import { IRow } from "../common/list/row";
+import { Post } from "hooks/summoners";
 
 function Home() {
 	// 유저리스트
@@ -24,6 +25,10 @@ function Home() {
 	const onOpenShowModal = () => setShowModal(true);
 	const onCloseShowModal = () => setShowModal(false);
 
+	useEffect(() => {
+		Post.getPosts().then((data) => setSummoners(data as IRow[]));
+	}, []);
+
 	return (
 		<>
 			<div>
@@ -36,7 +41,12 @@ function Home() {
 					<List headers={headers} summoners={summoners} />
 				</div>
 			</div>
-			<Modal size="mini" show={showModal} title="소환사 등록하기" onClose={onCloseShowModal}>
+			<Modal
+				size="mini"
+				show={showModal}
+				title="소환사 등록하기"
+				onClose={onCloseShowModal}
+			>
 				<SummerRegisterForm />
 			</Modal>
 		</>
