@@ -36,7 +36,7 @@ export const handlers = [
 						tier: "실버",
 						resent: "최근 챔피언",
 						rate: "50",
-						memo: "이겨주시면 돈드려요 편하게 친추 주세요",
+						memo: "??!",
 						createdAt: "22.22.22",
 					},
 					{
@@ -45,7 +45,7 @@ export const handlers = [
 						tier: "실버",
 						resent: "최근 챔피언",
 						rate: "50",
-						memo: "이겨주시면 돈드려요 편하게 친추 주세요",
+						memo: "??!",
 						createdAt: "22.22.22",
 					},
 					{
@@ -54,7 +54,7 @@ export const handlers = [
 						tier: "실버",
 						resent: "최근 챔피언",
 						rate: "50",
-						memo: "이겨주시면 돈드려요 편하게 친추 주세요",
+						memo: "??!",
 						createdAt: "22.22.22",
 					},
 					{
@@ -63,7 +63,7 @@ export const handlers = [
 						tier: "실버",
 						resent: "최근 챔피언",
 						rate: "50",
-						memo: "이겨주시면 돈드려요 편하게 친추 주세요",
+						memo: "??!",
 						createdAt: "22.22.22",
 					},
 				])
